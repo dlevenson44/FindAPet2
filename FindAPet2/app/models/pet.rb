@@ -5,7 +5,7 @@ class Pet < ApplicationRecord
 	has_attached_file :picture, styles: { medium: "300x300>", thumb: "100x100>" }
 	#validates the content type being uploaded is an image
   validates_attachment_content_type :picture, content_type: /\Aimage\/.*\z/
+	
+
 	belongs_to :user
 end
-
-# validates :name, :muscle_group, :sets, :reps, :date, :presence => true

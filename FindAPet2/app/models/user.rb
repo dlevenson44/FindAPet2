@@ -1,23 +1,28 @@
 class User < ApplicationRecord
-	#makes sure username is only repeated once in database
-	validates_uniqueness_of :username
-	#bcrypt method that handles password hashing
-  has_secure_password
-  has_secure_token :auth_token
+
+  PASSWORD_LENGTH = (6..25)
+  USERNAME_LENGTH = (5..25)
+
+  validates_presence_of :username
+  validates :username, length: USERNAME_LENGTH, uniqueness: true
+  validates :password, length: PASSWORD_LENGTH, allow_nil: true
+
   has_many :pets
 
-  #used to logout
-  def invalidate_token
-    self.update_columns(auth_token: nil)
+  attr_reader :password
+
+  def self.find_from_credentials(username, password)
+    user = find_by(username: username)
+    return nil unless user
+    user if user.is_password?(password)
   end
 
-  #makes sure use of built-in auth method bcrypt gives and hashes the password against the password_digest in the db
-  def self.validate_login(username, password)
-    user = find_by(username: username)
-    if user && user.authenticate(password)
-      user
-    end
+  def is_password?(password_attempt)
+    BCrypt::Password.new(password_digest).is_password?(password_attempt)
+  end
+
+  def password=(password)
+    @password = password
+    self.password_digest = BCrypt::Password.create(password)
   end
 end
-
-
