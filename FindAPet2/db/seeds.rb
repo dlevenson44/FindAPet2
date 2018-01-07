@@ -1,10 +1,10 @@
 #User table
-danwoo = User.create!(username: 'danwoo', password: 'test', f_name: 'Dan', l_name: 'Levenson', address: '41 Hooper St', city: 'Worcester', state: 'MA', zip: '01605', phone: '9174990107', email: 'dan@dan.com')
-danfram = User.create!(username: 'danfram', password: 'test', f_name: 'Danny', l_name: 'Levenson', address: '14 Temple St', city: 'Framingham', state: 'MA', zip: '01702', phone: '9174990107', email: 'dan@aol.com')
-sue = User.create!(username: 'sue', password: 'sue', f_name: 'Sue', l_name: 'Progoff', address: '123 Main St', city: 'New York', state: 'NY', zip: '10028', phone: '2125551234', email: 'sue@aol.com')
-billy = User.create!(username: 'billy', password: 'billy', f_name: 'Billy', l_name: 'Blue', address: '456 Electric Ave', city: 'New York', state: 'NY', zip: '10021', phone: '9175551234', email: 'billy@hotmail.com')
-mai = User.create!(username: 'mai', password: 'mai', f_name: 'Mai', l_name: 'Moly', address: '789 Boogie Dr', city: 'Denver', state: 'CO', zip: '12345', phone: '1234567890', email: 'mai@gmail.com')
-emma = User.create!(username: 'emma', password: 'emma', f_name: 'Emma', l_name: 'Cheddar', address: '012 Success Ln', city: 'Denver', state: 'CO', zip: '54321', phone: '0987654321', email: 'emma@aol.com')
+danwoo = User.create!(username: 'danwoo', password: 'administrator', f_name: 'Dan', l_name: 'Levenson', address: '41 Hooper St', city: 'Worcester', state: 'MA', zip: '01605', phone: '9174990107', email: 'dan@dan.com')
+danfram = User.create!(username: 'danfram', password: 'administrator', f_name: 'Danny', l_name: 'Levenson', address: '14 Temple St', city: 'Framingham', state: 'MA', zip: '01702', phone: '9174990107', email: 'dan@aol.com')
+sue = User.create!(username: 'susan', password: 'administrator', f_name: 'Sue', l_name: 'Progoff', address: '123 Main St', city: 'New York', state: 'NY', zip: '10028', phone: '2125551234', email: 'sue@aol.com')
+billy = User.create!(username: 'billy', password: 'administrator', f_name: 'Billy', l_name: 'Blue', address: '456 Electric Ave', city: 'New York', state: 'NY', zip: '10021', phone: '9175551234', email: 'billy@hotmail.com')
+mai = User.create!(username: 'maily', password: 'administrator', f_name: 'Mai', l_name: 'Moly', address: '789 Boogie Dr', city: 'Denver', state: 'CO', zip: '12345', phone: '1234567890', email: 'mai@gmail.com')
+emma = User.create!(username: 'emmaly', password: 'administrator', f_name: 'Emma', l_name: 'Cheddar', address: '012 Success Ln', city: 'Denver', state: 'CO', zip: '54321', phone: '0987654321', email: 'emma@aol.com')
 
 
 #Pets table
