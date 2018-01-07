@@ -8,7 +8,7 @@ class CreatePets < ActiveRecord::Migration[5.1]
     	t.integer :age
     	t.string :description
     	t.string :foster_length
-    	t.belongs_to :user
+    	t.belongs_to :user, index: true
 
       t.timestamps
     end
