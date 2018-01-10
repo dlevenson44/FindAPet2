@@ -9,6 +9,22 @@
   </head>
 
   <body>
+  	<div class="container">
+  		<div class="nav">
+  			<%if current_user %>
+  				<h1><%= current_user.username %></h1>
+  				<%= link_to 'Log Out', session_path, method: :delete %>
+  				<%= link_to 'My Posts', pets_path %>
+  				<%= link_to 'Create Post', new_pets_path %>
+  				<%= link_to 'View Pets', root_path %>
+  			<% else %>
+  				<%= link_to 'Log In', new_session_path %>
+  				<%= link_to 'Register', new_user_path %>
+  				<%= link_to 'View Pets', root_path %>
+  			<% end %>
+  		</div>
+  	</div>
+
     <%= yield %>
   </body>
 </html>
