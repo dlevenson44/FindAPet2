@@ -1,0 +1,12 @@
+<div>
+	<%= form_for @pet do |f| %>
+		<p class="pet-field">Name:  <%= f.text_field :name, placeholder: "Name", required: true, :class => 'pet-field'%></p>
+		<p class="pet-field">Post Type:  <%= f.text_field :post_type, placeholder: "Adoption or Foster?", required: true, :class => 'pet-field' %></p>
+		<p class="pet-field">Foster Length (if applicable):  <%= f.number_field :foster_length, placeholder: "Length of Foster Stay", :class => 'pet-field'%></p>
+		<p class="pet-field">Animal:  <%= f.text_field :animal, placeholder: "Animal", required: true, :class => 'pet-field' %></p>
+		<p class="pet-field">Breed:  <%= f.text_field :breed, placeholder: "Breed", required: true, :class => 'pet-field' %></p>
+		<p class="pet-field">Age:  <%= f.number_field :age, placeholder: "Age", required: true, :class => 'pet-field' %></p>
+		<p class="pet-field">Description:  <%= f.text_area_tag(:description, "Tell us more about the pet!", size: "75x50") %></p>
+		<%= f.submit "Create Post", :class => 'show-link' %>
+	<% end %>
+</div>
