@@ -26,7 +26,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
     @pet = Pet.find(params[:id])
   end
 
