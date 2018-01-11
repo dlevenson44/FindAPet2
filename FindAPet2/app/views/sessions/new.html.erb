@@ -1,6 +1,6 @@
 <h2>Enter your credentials below: </h2>
 
-<%= form_for :user, url: session_index_path do |f| %>
+<%= form_for :user, url: session_path do |f| %>
 	<%= f.text_field :username, placeholder: 'Username', required: true %>
 	<%= f.password_field :password, placeholder: 'Password', required: true %>
 	<%= submit_tag 'Log in' %>
