@@ -6,8 +6,11 @@
 	<div>
 		<% @pets.each do |pet| %>
 			<div>
-				<p><%= pet.name %></p>
+				<ul>
+					<li><%= link_to pet.name, user_path(pet)  %></li>
+				</ul>
 			</div>
 		<% end %>
 	</div>
 <% end %>
+
