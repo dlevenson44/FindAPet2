@@ -22,12 +22,12 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-    @petname = User.first.pets.first.name
     @pets = current_user.pets
   end
 
   def show
     @user = User.find(params[:id])
+    @pet = Pet.find(params[:id])
   end
 
   private
@@ -36,8 +36,3 @@ class UsersController < ApplicationController
     params.require(:user).permit(:username, :password, :f_name, :l_name, :address, :city, :state, :zip, :phone, :email)
   end
 end
-
-
-  # <% @users.each do |user| %>
-  #   <li><%= link_to @petname, user_path(user) %></li>
-  # <% end %>
