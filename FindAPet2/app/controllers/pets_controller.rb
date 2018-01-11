@@ -1,8 +1,9 @@
-class PetsController < ApiController
+class PetsController < ApplicationController
 	before_action :require_login, except: [:index, :show]
 
 	def index
-		@pets = Pet.all.order(id: :desc)
+		@pets = Pet.all.order(id: :asc)
+		@userpets = current_user.pets
 	end
 
 	def show

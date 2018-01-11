@@ -1,0 +1,13 @@
+<h3>Users</h3>
+
+<% if @pets.empty? %>
+	<h1>No posts made</h1>
+<% else %>
+	<div>
+		<% @pets.each do |pet| %>
+			<div>
+				<p><%= pet.name %></p>
+			</div>
+		<% end %>
+	</div>
+<% end %>
