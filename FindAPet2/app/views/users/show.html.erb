@@ -1,4 +1,18 @@
 <div>
-	<%= button_to 'Add Post', new_pet_path(@pet), :class => "show-link", :method => :get %>
+	<div class="show-info">
+		<h3 class="pet-header"><%= @pet.name %></h3>
+		<h5 class="pet-info"><%= @pet.post_type %></h5>
+		<p class="pet-para"><%= @pet.foster_length %></p>
+		<h5 class="pet-info"><%= @pet.animal %></h5>
+		<h5 class="pet-info"><%= @pet.breed %></h5>
+		<h5 class="pet-info"><%= @pet.age %> years old,</h5>
+		<h5 class="pet-info"><%= @pet.description %></h5>
+	</div>
+</div>
+<div class="show-UD">
+	<%= button_to "Edit Post", edit_pet_path(@pet), :class => "show-link", :method => :get %>
+	<%= form_for @pet, :class => "show-link", html: {method: 'delete'} do |f| %>
+		<%= f.submit "Delete Post", :class => "show-link" %>
+	<% end %>
 </div>
 
