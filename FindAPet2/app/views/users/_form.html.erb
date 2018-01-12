@@ -6,7 +6,9 @@
 		<p class="pet-field">Animal:  <%= f.text_field :animal, placeholder: "Animal", required: true, :class => 'pet-field' %></p>
 		<p class="pet-field">Breed:  <%= f.text_field :breed, placeholder: "Breed", required: true, :class => 'pet-field' %></p>
 		<p class="pet-field">Age:  <%= f.number_field :age, placeholder: "Age", required: true, :class => 'pet-field' %></p>
-		<p class="pet-field">Description:  <%= f.text_area_tag(:description, "Tell us more about the pet!", size: "75x50") %></p>
+		<p class="pet-field">Description:  <%= f.text_field :description, placeholder: "Tell us more about your pet.", required: true, :class => 'pet-description' %></p>
 		<%= f.submit "Create Post", :class => 'show-link' %>
 	<% end %>
 </div>
+
+
