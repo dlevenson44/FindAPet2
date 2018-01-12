@@ -1,5 +1,5 @@
 class PetsController < ApplicationController
-	before_action :require_login, except: [:index, :show]
+	before_action :ensure_signed_in, except: [:index, :show]
 
 	def index
 		@pets = Pet.all.order(id: :asc)

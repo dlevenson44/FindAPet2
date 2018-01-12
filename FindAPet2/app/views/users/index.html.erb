@@ -1,5 +1,7 @@
 <h3>Users</h3>
 
+<%= button_to 'Add Pet', new_pet_path(@pet), :method => :get %>
+
 <% if @pets.empty? %>
 	<h1>No posts made</h1>
 <% else %>
