@@ -1,0 +1,10 @@
+<div class="edit-container">
+	<h1 class="edit-header">Find-A-Pet</h1>
+	<div class="edit-form">
+		<%= button_to 'View Posts', users_path(@pets), :class => "edit-link", :method => :get %>
+	</div>
+	<h3 class="edit-subheader">Edit Post Below: </h3>
+		<div class="edit-subcont">
+			<%= render partial: 'form' %>
+		</div>
+</div>
