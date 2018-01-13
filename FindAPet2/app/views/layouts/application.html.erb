@@ -13,7 +13,7 @@
   		<div class="nav">
   			<%if current_user %>
   				<h1><%= current_user.username %></h1>
-  				<%= link_to 'Pets', root_path %>
+  				<%= link_to 'Pets', pets_path %>
           <%= link_to 'View Profile', users_path %>
           <%= link_to 'Log Out', session_path, method: :delete %>
   			<% else %>
