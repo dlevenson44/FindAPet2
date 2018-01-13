@@ -3,6 +3,15 @@ class UsersController < ApplicationController
   before_action :ensure_signed_out, only: [:new, :create]
   before_action :ensure_signed_in, only: [:show, :index]
 
+  def index
+    @users = User.all
+    @pets = current_user.pets
+  end
+
+  def show
+    @pet = Pet.find(params[:id])
+  end
+
   def new
     @user = User.new
   end
@@ -20,14 +29,26 @@ class UsersController < ApplicationController
     end
   end
 
-  def index
-    @users = User.all
-    @pets = current_user.pets
+  def edit
+    @user = User.find(params[:id])
   end
 
-  def show
-    @pet = Pet.find(params[:id])
+  def update
+    @user = User.find(params[:id])
+    if @user.update(create_params)
+      redirect_to users_path
+    else
+      redirect_to user_edit_path(@user)
+    end
   end
+
+  def destroy
+    @user = User.find(params[:id])
+    @user.delete
+    redirect_to root_path
+  end
+
+
 
   private
 
