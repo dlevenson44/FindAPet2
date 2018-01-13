@@ -1,13 +1,9 @@
 <h3>Users</h3>
 
-<% if @pets.empty? %>
-	<h1>No posts made</h1>
-<% else %>
-	<div>
-		<% @pets.each do |pet| %>
-			<div>
-				<p><%= pet.name %></p>
-			</div>
-		<% end %>
-	</div>
-<% end %>
+<div>
+	<% @pets.each do |pet| %>
+		<div>
+			<li class="pet-li"><%= link_to pet.name, pet_path(pet) %></p>
+		</div>
+	<% end %>
+</div>
