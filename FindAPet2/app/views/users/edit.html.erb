@@ -7,4 +7,8 @@
 		<div class="edit-subcont">
 			<%= render partial: 'form' %>
 		</div>
+	<div class="edit-form">
+		<%= form_for @user, :class => "edit-link", html: {method: 'delete'} do |f| %>
+			<%= f.submit "Delete Account", :class => "edit-link" %>
+		<% end %>
 </div>

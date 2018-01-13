@@ -3,7 +3,6 @@ class PetsController < ApplicationController
 
 	def index
 		@pets = Pet.all.order(id: :asc)
-		@userpets = current_user.pets
 	end
 
 	def show
