@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def index
     @users = User.all
     @pets = current_user.pets
+    @user = current_user
   end
 
   def show
@@ -30,11 +31,11 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find(params[:id])
+    @user = current_user
   end
 
   def update
-    @user = User.find(params[:id])
+    @user = current_user
     if @user.update(create_params)
       redirect_to users_path
     else
