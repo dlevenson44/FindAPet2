@@ -10,7 +10,7 @@
 	</div>
 </div>
 <div class="show-UD">
-	<%= button_to "Edit Post", root_path, :class => "show-link", :method => :get %>
+	<%= button_to "Edit Post", edit_pet_path, :class => "show-link", :method => :get %>
 	<%= form_for @pet, :class => "show-link", html: {method: 'delete'} do |f| %>
 		<%= f.submit "Delete Post", :class => "show-link" %>
 	<% end %>

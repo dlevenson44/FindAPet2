@@ -1,5 +1,5 @@
 <div>
-	<%= form_for @pet do |f| %>
+	<%= form_for @pet, html: { multipart: true } do |f| %>
 		<p class="pet-field">Name:  <%= f.text_field :name, placeholder: "Name", required: true, :class => 'pet-field'%></p>
 		<p class="pet-field">Post Type:  <%= f.text_field :post_type, placeholder: "Adoption or Foster?", required: true, :class => 'pet-field' %></p>
 		<p class="pet-field">Foster Length (if applicable):  <%= f.number_field :foster_length, placeholder: "Length of Foster Stay", :class => 'pet-field'%></p>
@@ -7,6 +7,7 @@
 		<p class="pet-field">Breed:  <%= f.text_field :breed, placeholder: "Breed", required: true, :class => 'pet-field' %></p>
 		<p class="pet-field">Age:  <%= f.number_field :age, placeholder: "Age", required: true, :class => 'pet-field' %></p>
 		<p class="pet-field">Description:  <%= f.text_field :description, placeholder: "Tell us more about your pet.", required: true, :class => 'pet-description' %></p>
+		<p class="pet-field">Picture:  <%= f.file_field :image %></p>
 		<%= f.submit "Submit", :class => 'show-link' %>
 	<% end %>
 </div>
