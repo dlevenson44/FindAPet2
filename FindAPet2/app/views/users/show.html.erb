@@ -8,6 +8,9 @@
 		<h5 class="pet-info"><%= @pet.age %> years old</h5>
 		<h5 class="pet-info"><%= @pet.description %></h5>
 	</div>
+	<div class="picture">
+		<%= image_tag @pet.picture.url(:medium) %>
+	</div>
 </div>
 <div class="show-UD">
 	<%= button_to "Edit Post", edit_pet_path, :class => "show-link", :method => :get %>

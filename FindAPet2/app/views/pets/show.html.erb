@@ -11,7 +11,10 @@
 			<h5 class="pet-info"><%= @pet.animal %></h5>
 			<h5 class="pet-info"><%= @pet.breed %></h5>
 			<h5 class="pet-info"><%= @pet.age %> years old</h5>
-			<h5 class="pet-info"><%= @pet.description %></h5>
+			<h5 class="pet-info"><%= @pet.description %></h5>			
+		</div>
+		<div class="picture">
+			<%= image_tag @pet.picture.url(:medium) %>
 		</div>
 	</div>
 </div>
