@@ -1,5 +1,6 @@
 class PetsController < ApplicationController
 	before_action :ensure_signed_in, except: [:index, :show]
+	before_action :new_imgur_session
 
 	def index
 		@pets = Pet.all.order(id: :asc)

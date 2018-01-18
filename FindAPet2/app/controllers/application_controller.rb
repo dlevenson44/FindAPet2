@@ -36,10 +36,5 @@ class ApplicationController < ActionController::Base
   	flash[:error] = 'You are already signed in.'
   	redirect_to users_path
   end
-
-  def new_imgur_session
-    @imgur_session = Imgurapi::Session.new(
-      client_id: ENV['IMGUR_CLIENT_ID']      
-      )
 end
 
