@@ -58,3 +58,7 @@ gem "paperclip", "~> 5.0.0"
 
 #Enable S3 Uploading
 gem 'aws-sdk', '~> 3'
+
+#Enable dotenv-rails and faraday gems
+gem 'dotenv-rails'
+gem 'faraday'
