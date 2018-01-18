@@ -56,5 +56,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Use PaperClip Gem
 gem "paperclip", "~> 5.0.0"
 
-#Use imgurapi Gem
-gem 'imgurapi'
+#Enable S3 Uploading
+gem 'aws-sdk', '~> 3'
