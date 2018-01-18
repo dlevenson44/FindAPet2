@@ -61,4 +61,3 @@ gem 'aws-sdk', '~> 3'
 
 #Enable dotenv-rails and faraday gems
 gem 'dotenv-rails'
-gem 'faraday'
