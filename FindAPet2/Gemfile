@@ -59,6 +59,5 @@ gem "paperclip", "~> 5.0.0"
 #Enable S3 Uploading
 gem 'aws-sdk', '< 2.0'
 
-#Enable dotenv-rails and figaro gems
-gem 'dotenv-rails'
+#access environment variables
 gem "figaro"
