@@ -51,21 +51,22 @@ body {
 	color: #EF3E4A;
 }
 
-.pet-header {
-	color: #EF3E4A;
-	font-family: 'Permanent Marker', cursive;
-	font-size: 24px;
-	letter-spacing: 1px;
-}
-
 .list-container {
 	height: 550px;
 	width: 200px;
 	overflow: auto;
 }
 
+.list-header {
+	color: #EF3E4A;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
 .pet-li {
 	list-style: none;
+	padding-top: 2px;
 }
 
 .list-link {
@@ -73,7 +74,42 @@ body {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 18px;
 	font-weight: bold;
+}
 
+
+.show-container {
+	height: 550px;
+	width: 1000px;
+}
+
+.show-subcont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.show-info {
+	width: 325px;
+}
+
+.pet-header {
+	color: #EF3E4A;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 36px;
+	letter-spacing: 2px;	
+}
+
+.pet-picture {
+	padding-left: 25px;
+	height: 450px;
+	width: 450px;
+}
+
+.pet-info {
+	color: #117ACA;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
 }
 
 .list-link:hover {
