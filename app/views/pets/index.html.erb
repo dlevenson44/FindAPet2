@@ -1,9 +1,9 @@
-<h3>Users</h3>
+<h3 class="pet-header">Available Pets</h3>
 
-<div>
+<div class="list-container">
 	<% @pets.each do |pet| %>
 		<div>
-			<li class="pet-li"><%= link_to pet.name, pet_path(pet) %></p>
+			<li class="pet-li"><%= link_to pet.name, pet_path(pet), :class=>"list-link" %></p>
 		</div>
 	<% end %>
 </div>

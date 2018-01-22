@@ -4,6 +4,8 @@
 */
 
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 
 body {
 	background-color: #FDF06F;
@@ -49,9 +51,40 @@ body {
 	color: #EF3E4A;
 }
 
-.main-footer {
+.pet-header {
+	color: #EF3E4A;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
+.list-container {
+	height: 550px;
+	width: 200px;
+	overflow: auto;
+}
+
+.pet-li {
+	list-style: none;
+}
+
+.list-link {
+	color: #117ACA;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+.list-link:hover {
+	color: #EF3E4A;
+	border: 2px solid #EF3E4A;
+}
+
+.footer {
   color: #117ACA;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   padding-top: 40px;
+  font-weight: bolder;
 }
