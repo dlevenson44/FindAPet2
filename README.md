@@ -1,24 +1,28 @@
-# README
+# Find-A-Pet 2.0
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Find-A-Pet built entirely with Ruby on Rails, utilizing Paperclip and AWS SDK gems for image upload.
 
-Things you may want to cover:
+# User Stories
+User loads Index page, can either click on Pets button to view available pets, Login to sign in if they have an account, or Register to create a new account.  
 
-* Ruby version
+If the user clicks on Pets, it will render a list of all the posts made on the page.  Each post is represented by the Pet's name, and when you click the name it will then show you more information about that pet.
 
-* System dependencies
+If the user clicks on Register they can create an account.  Once account is created they will be signed in and redirected to User Profile page.
 
-* Configuration
+If the user clicks Login they can enter their credentials, and they will then be redirected to the User Profile page.
 
-* Database creation
+The User Profile page will have buttons where the user can edit their profile and to create new posts.  Beneath that a list of the posts that user has created, if any.  
 
-* Database initialization
+If the user clicks on Edit Profile, they can Edit all the information for their profile, as well as delete their account.
 
-* How to run the test suite
+If the user clicks on a post they made, it will show the posts content, as well as offer buttons to edit or delete the post.
 
-* Services (job queues, cache servers, search engines, etc.)
+# Tech Used
+Ruby on Rails
 
-* Deployment instructions
+AWS SDK 2.3 Gem
+Figaro Gem
+Paperclip Gem
+Tzinfo-data Gem
 
-* ...
+Deployed on Heroku:  findapetv2.herokuapp.com
