@@ -1,6 +1,6 @@
 # Find-A-Pet 2.0
 
-Find-A-Pet built entirely with Ruby on Rails, utilizing Paperclip and AWS SDK gems for image upload.
+Find-A-Pet built entirely with Ruby on Rails.  Allows users to create posts if they have a pet they need to put up for adoption or foster, and allows site visitors to see these posts and contact the Post Creator.
 
 # User Stories
 User loads Index page, can either click on Pets button to view available pets, Login to sign in if they have an account, or Register to create a new account.  
