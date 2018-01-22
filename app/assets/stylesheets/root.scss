@@ -77,12 +77,20 @@ body {
 
 .form-link {
 	color: #117ACA;
-	font-size: 20px;
+	font-size: 24px;
 	margin-left: 50px;
+	background-color: #EF3E4A;
 }
 
 .form-link:hover {
 	color: #EF3E4A;
+	background-color: #117ACA;
+}
+
+.show-ud {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-left: 50px;
 }
 
 .list-container {

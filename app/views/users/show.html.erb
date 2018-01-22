@@ -1,21 +1,23 @@
 <div>
-	<div class="show-info">
-		<h3 class="pet-header"><%= @pet.name %></h3>
-		<h5 class="pet-info"><%= @pet.post_type %></h5>
-		<p class="pet-para"><%= @pet.foster_length %></p>
-		<h5 class="pet-info"><%= @pet.animal %></h5>
-		<h5 class="pet-info"><%= @pet.breed %></h5>
-		<h5 class="pet-info"><%= @pet.age %> years old</h5>
-		<h5 class="pet-info"><%= @pet.description %></h5>
+	<div class="show-subcont">
+		<div class="show-info">
+			<h3 class="pet-header"><%= @pet.name %></h3>
+			<h5 class="pet-info">Name:  <%= @pet.name %></h5>
+			<h5 class="pet-info">Post Type: <%= @pet.post_type %></h5>
+			<p class="pet-info"><%= @pet.foster_length %></p>
+			<h5 class="pet-info">Animal:  <%= @pet.animal %></h5>
+			<h5 class="pet-info">Breed:  <%= @pet.breed %></h5>
+			<h5 class="pet-info">Age:  <%= @pet.age %> years old</h5>
+			<h5 class="pet-info">Description:  <%= @pet.description %></h5>			
+		</div>
+		<div class="pet-picture">
+			<%= image_tag @pet.picture.url(:medium), alt: "No Picture Available" %>
+		</div>
 	</div>
-	<div class="picture">
-		<%= image_tag @pet.picture.url(:medium) %>
+	<div class="show-UD">
+		<%= button_to "Edit Post", edit_pet_path, :class => "form-link", :method => :get %>
+		<%= form_for @pet, :class => "show-link", html: {method: 'delete'} do |f| %>
+			<%= f.submit "Delete Post", :class => "form-link" %>
+		<% end %>
 	</div>
 </div>
-<div class="show-UD">
-	<%= button_to "Edit Post", edit_pet_path, :class => "show-link", :method => :get %>
-	<%= form_for @pet, :class => "show-link", html: {method: 'delete'} do |f| %>
-		<%= f.submit "Delete Post", :class => "show-link" %>
-	<% end %>
-</div>
-
