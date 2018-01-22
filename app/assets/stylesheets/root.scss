@@ -1,3 +1,57 @@
-// Place all the styles related to the root controller here.
+/*// Place all the styles related to the root controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body {
+	background-color: #FDF06F;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.root-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header {
+	color:#117ACA;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 44px;
+	letter-spacing: 5px;
+	border-top: 40px;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	border-top: 40px;
+}
+
+.nav-link {
+	color: #EF3E4A;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 22px;
+	padding: 20px;
+}
+
+.nav-link:hover {
+	border: 2px solid #EF3E4A;
+	font-weight: bold;
+}
+
+.nav-link:visited {
+	color: #EF3E4A;
+}
+
+.main-footer {
+  color: #117ACA;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  padding-top: 40px;
+}
