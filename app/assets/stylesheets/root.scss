@@ -87,10 +87,12 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
+	margin-left: 50px;
 }
 
 .show-info {
 	width: 325px;
+	overflow: auto;
 }
 
 .pet-header {
