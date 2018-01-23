@@ -1,10 +1,11 @@
 <div class="login-container">
 	<h3 class="login-header">Enter your credentials below: </h3>
-	<div class="form-container"
-	<%= form_for :user,  :class=>"login-form", url: session_path do |f| %>
+	<div class="form-container">
+	<%= form_for :user, url: session_path do |f| %>
 		<%= f.text_field :username, placeholder: 'Username', required: true, :class=>"login-field" %>
 		<%= f.password_field :password, placeholder: 'Password', required: true, :class=>"login-field" %>
 		<%= submit_tag 'Log in', :class=>"form-link" %>
 	<% end %>
 	<p class="session"> Don't have an account?  <%= link_to 'Sign up here!', new_user_path, :class=>"session-link" %></p>
+	</div>
 </div>
