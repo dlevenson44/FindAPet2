@@ -1,5 +1,7 @@
-<h2>Create an account: </h2>
+<div class="register-container">
+<h3 class="login-header">Create an account: </h3>
 
 <%= render partial: 'form' %>
 
-Already have an account? <%= link_to 'Click here to sign in!', new_session_path %>
+<p class="session">Already have an account? <%= link_to 'Click here to sign in!', new_session_path, :class=>"session-link" %>
+</div>

@@ -74,6 +74,34 @@ body {
 	font-size: 24px;
 }
 
+.register-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 570px;
+	width: 1000px;
+}
+
+.register-field {
+	height: 30px;
+	width: 170px;
+	font-size: 24px;
+	margin-left: 25px;
+}
+
+.reg-link {
+	color: #117ACA;
+	font-size: 24px;
+	padding-top: 150px;
+	background-color: #EF3E4A;
+	width: 200px;
+}
+
+.reg-link:hover {
+	color: #EF3E4A;
+	background-color: #117ACA;
+}
+
 .session {
 	color: #117ACA;
 	font-family: 'Quicksand', sans-serif;
