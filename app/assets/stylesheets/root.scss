@@ -51,6 +51,47 @@ body {
 	color: #EF3E4A;
 }
 
+.login-container {
+	height: 570px;
+	width: 1000px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-header {
+	color: #EF3E4A;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 36px;
+	letter-spacing: 2px;
+	margin-bottom: 200px;	
+}
+
+.login-field {
+	height: 45px;
+	width: 200px;
+	font-size: 24px;
+}
+
+.session {
+	color: #117ACA;
+	font-family: 'Quicksand', sans-serif;
+	margin-left: 100px;
+}
+
+.session-link:visited {
+	color: #117ACA;
+}
+
+.session-link:hover {
+	color: #EF3E4A;
+}
+
+.form-container {
+	margin-bottom: 200px;
+}
+
 .create-container {
 	height: 550px;
 	width: 1000px;
