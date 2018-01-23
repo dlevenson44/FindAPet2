@@ -44,8 +44,13 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:id])
+    @user = User.find(params[:id])    
+    # @pets = current_user.pets
+    # @pets.delete_all
+    list = @user.pets
+    list.each { |f| f.delete }
     @user.delete
+    flash[:success] = "User deleted"
     redirect_to root_path
   end
 
