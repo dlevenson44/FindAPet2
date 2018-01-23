@@ -116,6 +116,33 @@ body {
 	color: #EF3E4A;
 }
 
+.profile-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile-link {
+	color: #117ACA;
+	font-size: 24px;
+	margin-left: 50px;
+	background-color: #EF3E4A;
+	margin-bottom: 300px;
+}
+
+.profile-link:hover {
+	color: #EF3E4A;
+	background-color: #117ACA;
+}
+
+.profile-header {
+	color: #EF3E4A;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
 .form-container {
 	margin-bottom: 200px;
 }
