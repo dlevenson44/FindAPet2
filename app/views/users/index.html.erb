@@ -4,14 +4,16 @@
 	<%= button_to 'Add Pet', new_pet_path(@pet), :method => :get, :class=>"profile-link" %>
 	</div>
 	<% if @pets.empty? %>
-		<h5 class="profile-header">No posts made</h5>
+		<div class="profile-container">
+			<h5 class="profile-header">No posts made</h5>
+		</div>
 	<% else %>
-		<div>
+		<div class="profile-container">
 			<h5 class="profile-header">Created Posts</h5>
 			<% @pets.each do |pet| %>				
 				<div>
 					<ul>
-						<li class="pet-li"><%= link_to pet.name, user_path(pet)  %></li>
+						<li class="pet-li"><%= link_to pet.name, user_path(pet), :class=>"list-link"  %></li>
 					</ul>
 				</div>
 			<% end %>

@@ -128,12 +128,20 @@ body {
 	font-size: 24px;
 	margin-left: 50px;
 	background-color: #EF3E4A;
-	margin-bottom: 300px;
+	margin-right: 100px;
+	margin-top: 10px;
 }
 
 .profile-link:hover {
 	color: #EF3E4A;
 	background-color: #117ACA;
+}
+
+.profile-container {
+	height: 550px;
+	width: 350px;
+	overflow: auto;
+	margin-left: 125px;
 }
 
 .profile-header {
