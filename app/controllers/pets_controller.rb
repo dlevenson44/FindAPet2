@@ -8,6 +8,7 @@ class PetsController < ApplicationController
 	def show
 		@pet = Pet.find(params[:id])
 		@pets = Pet.all.order(id: :desc)
+		@user = @pet.user
 	end
 
 	def new

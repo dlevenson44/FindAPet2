@@ -8,10 +8,11 @@
 			<h5 class="pet-info">Animal:  <%= @pet.animal %></h5>
 			<h5 class="pet-info">Breed:  <%= @pet.breed %></h5>
 			<h5 class="pet-info">Age:  <%= @pet.age %> years old</h5>
-			<h5 class="pet-info">Description:  <%= @pet.description %></h5>			
+			<h5 class="pet-info">Description:  <%= @pet.description %></h5>	
 		</div>
 		<div class="pet-picture">
 			<%= image_tag @pet.picture.url(:medium), alt: "No Picture Available" %>
 		</div>
 	</div>
+	<%= mail_to @user.email, "Click here to contact the Poster", :class=>"contact-email" %>
 </div>

@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-    @pets = current_user.pets
+    @pets = current_user.pets.order(id: :desc)
     @user = current_user
   end
 
@@ -45,8 +45,6 @@ class UsersController < ApplicationController
 
   def destroy
     @user = User.find(params[:id])    
-    # @pets = current_user.pets
-    # @pets.delete_all
     list = @user.pets
     list.each { |f| f.delete }
     @user.delete
