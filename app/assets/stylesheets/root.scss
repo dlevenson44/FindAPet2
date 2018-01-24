@@ -159,6 +159,11 @@ body {
 	background-color: #EF3E4A;
 }
 
+.delete-link:hover {
+	color: #EF3E4A;
+	background-color: #117ACA;
+}
+
 .form-container {
 	margin-bottom: 200px;
 }
@@ -210,6 +215,14 @@ body {
 	color: #117ACA;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: bolder;
+}
+
+.contact-email:hover {
+	color: #EF3E4A;
+}
+
+.contact-email:visited {
+	color: #117ACA;
 }
 
 .list-container {
