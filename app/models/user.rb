@@ -6,6 +6,7 @@ class User < ApplicationRecord
   validates_presence_of :username
   validates :username, length: USERNAME_LENGTH, uniqueness: true
   validates :password, length: PASSWORD_LENGTH, allow_nil: true
+  validates :email, uniqueness: true
 
   has_many :pets
 
