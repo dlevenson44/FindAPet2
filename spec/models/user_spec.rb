@@ -8,4 +8,28 @@ RSpec.describe User, type: :model do
 	it "is not valid without a username" do
 		expect(user).not_to be_valid
 	end
+
+	# test username min length
+	it "must have at least 5 chars in username" do
+		user.username = 'a' * 4
+		expect(user).not_to be_valid
+	end
+
+	# test username max length
+	it "must have no more than 25 chars in username" do
+		user.username = 'a' * 26
+		expect(user).not_to be_valid
+	end
+	
+	# test password min length
+	it "must have at least 6 chars in password" do
+		user.password = 'a' * 5
+		expect(user).not_to be_valid
+	end
+
+	#test password max length
+	it "must have no more than 25 chars in password" do
+		user.password = 'a' * 26
+		expect(user).not_to be_valid
+	end
 end
